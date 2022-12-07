@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        h2 {
+            background-color: indigo;
+            font: italic 15pt Ubuntu;
+            color: rgb(145, 190, 175);
+            width: 190pt;
+        }
+        body {
+            background-color: rgb(240, 240, 156);
+        }
+        div#res {
+            line-height: 200px;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h2> Sistema de Naturalidade </h2>
+    Qual seu pais de origem? <br><input type="text" id="nac" name="nac">
+    <input type="button" value="Verificar" onclick="clicar()"><br>
+
+    <div id="res">
+
+
+</body>
+    <script>
+        var naci = window.document.getElementById('nac')
+        var res = window.document.getElementById('res')
+        function clicar(){
+            if (naci=="brasileiro"){
+               res.innerHTML = ' Você é <strong>Brasileiro</strong>' 
+            }else{
+                res.innerHTML = ' Você é <strong>Gringo</strong>' 
+            }
+            
+        }        
+
+    </script>
+
+</html>
