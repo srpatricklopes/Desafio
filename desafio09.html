@@ -25,17 +25,17 @@
 </head>
 <body>
     <h2> Sistema de Naturalidade </h2>
-    Qual seu país de origem? <br><input type="text" id="nac" name="nac">
+    Qual seu país de origem? <br><input type="text" id="txtn1" name="nac">
     <input type="button" value="Verificar" onclick="clicar()"><br>
 
-    <div id="res">
-
-
+    <div id="res">    
+        
 </body>
     <script>
-        var naci = window.document.getElementById('nac')
+        
         var res = window.document.getElementById('res')
         function clicar(){
+            var naci = window.document.getElementById("txtn1").value;
             if (naci=="brasileiro"){
                res.innerHTML = ' Você é <strong>Brasileiro</strong>' 
             }else{
